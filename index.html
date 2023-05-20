@@ -1,0 +1,209 @@
+<html>
+<head>
+<title>Shirley's Cafe</title>
+<meta charset='utf-8'>
+<meta name='description' content='Restaurant Menu for Shirleys Cafe'>
+<meta name="viewport" content="width=device-width,intital-scale=1.0">
+<link href="style.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+<header role='banner'>
+  <h1>Welcome to Shirley's Cafe</h1>
+  <nav>
+    <ol class="navigation" role='navigation'>
+      <li>
+        <a href='#menu'>Menu</a>
+      </li>
+      <li>
+        <a href='#order'>Order</a>
+      </li>
+      <li>
+        <a href='#location'>Location</a>
+      </li>
+      <li>
+        <a href='#contact'>Contact Us</a>
+      </li>
+      <li> 
+        <a href="#social"> Follow Us</a>
+      </li>
+    </ol>
+    <form role='search'>
+      <input type='search' placeholder='Enter search term here...'>
+      <input type='submit' value='search'>
+    </form>
+  </nav>
+</header>
+
+<main role='main'>
+  <div class="menu" id="menu">
+  <h2>Menu</h2>
+  <h3> Drinks </h3>
+  <img class="foodpics" src="coffee.jpg" alt="picture of coffee">
+  <p class="foodname">Miss Shirley's Small Pot</p>
+  <p class="price">6.99</p>
+  <p class="fooddes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum porttitor ultricies. Proin ornare est sed orci hendrerit tincidunt. Mauris nisl tortor, efficitur eget ante gravida, porta convallis ante. Nam non diam sit amet augue lobortis auctor non maximus arcu. Fusce vel nunc vitae nulla lobortis aliquam sit amet in dui. Nunc felis justo, hendrerit ac lacus nec, consectetur vehicula nulla. Duis non iaculis tellus. Quisque magna tortor, interdum vel volutpat quis, aliquet id massa. Vivamus commodo vestibulum luctus. Mauris congue mollis justo. Aliquam suscipit sit amet mi et pellentesque.</p>
+  <img class="foodpics" src="milkshake.jpg" alt="picture of a strawberry milkshake"> 
+  <p class="foodname"> Too Sweet Milk Treat</p>
+  <p class="price">8.99</p>
+  <p class="fooddes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum porttitor ultricies. Proin ornare est sed orci hendrerit tincidunt. Mauris nisl tortor, efficitur eget ante gravida, porta convallis ante. Nam non diam sit amet augue lobortis auctor non maximus arcu. Fusce vel nunc vitae nulla lobortis aliquam sit amet in dui. Nunc felis justo, hendrerit ac lacus nec, consectetur vehicula nulla. Duis non iaculis tellus. Quisque magna tortor, interdum vel volutpat quis, aliquet id massa. Vivamus commodo vestibulum luctus. Mauris congue mollis justo. Aliquam suscipit sit amet mi et pellentesque.</p>
+  <h3>Meals</h3>
+  <img class="foodpics" src="pancake.jpg" alt="picture of fancy pancakes">
+  <p class="foodname">Miss Shirley's Hot Cakes </p>
+  <p class="price">10.99</p>
+  <p class="fooddes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum porttitor ultricies. Proin ornare est sed orci hendrerit tincidunt. Mauris nisl tortor, efficitur eget ante gravida, porta convallis ante. Nam non diam sit amet augue lobortis auctor non maximus arcu. Fusce vel nunc vitae nulla lobortis aliquam sit amet in dui. Nunc felis justo, hendrerit ac lacus nec, consectetur vehicula nulla. Duis non iaculis tellus. Quisque magna tortor, interdum vel volutpat quis, aliquet id massa. Vivamus commodo vestibulum luctus. Mauris congue mollis justo. Aliquam suscipit sit amet mi et pellentesque.</p>
+  <img class="foodpics" src="burger.jpg" alt="picture of burger">
+  <p class="foodname"> Beauti-FULL Burger </p>
+  <p class="price">14.99</p>
+  <p class="fooddes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum porttitor ultricies. Proin ornare est sed orci hendrerit tincidunt. Mauris nisl tortor, efficitur eget ante gravida, porta convallis ante. Nam non diam sit amet augue lobortis auctor non maximus arcu. Fusce vel nunc vitae nulla lobortis aliquam sit amet in dui. Nunc felis justo, hendrerit ac lacus nec, consectetur vehicula nulla. Duis non iaculis tellus. Quisque magna tortor, interdum vel volutpat quis, aliquet id massa. Vivamus commodo vestibulum luctus. Mauris congue mollis justo. Aliquam suscipit sit amet mi et pellentesque.</p>
+  </div>
+  <h2>Order</h2>
+  <div class="order" id="order">
+<!-- Add your restaurant order form below -->
+  <form role='order_form'>
+    <!-- USE LATER FOR  SOMETHING RELEVANT 
+    <label for="meals">Order Here:</label><br>
+    <select id="meals" name="meals" size="4" mulitple>
+      <option value="coffee">Miss Shirley's Smalle Pot</option>
+      <option value="milkshake">Too Sweet Milk Treat</option>
+      <option value="pancake">Miss Shirley's Hot Cakes</option>
+      <option value="burger">Beauti-FULL Burger</option>
+    </select><br>
+    -->
+    <fieldset>
+      <legend>Order Information</legend>
+      <div class="foodcheckbox">
+        <!--When click checkbox, make it requirement to click number and when check off make the number box zero. Include way to reset number box.-->
+        <input type="checkbox" id="food1" name="food1" value="Coffee">
+        <label for="food1">Miss Shirley's Small Pot</label><br> 
+        <label for="numbers">How many you want sweetheart?</label>
+        <input id="numbers" name="numbers" type="number" min="1" max="20"><br>
+  
+        <input type="checkbox" id="food2" name="food2" value="Milkshake">
+        <label for="food2">Too Sweet Milk Treat</label><br>
+        <label for="numbers">How many you want sweetheart?</label>
+        <input id="numbers" name="numbers" type="number" min="1" max="20"><br>
+  
+  
+        <input type="checkbox" id="food3" name="food3" value="Pancake">
+        <label for="food3">Miss Shirley's Hot Cakes</label><br>
+        <label for="numbers">How many you want sweetheart?</label>
+        <input id="numbers" name="numbers" type="number" min="1" max="20"><br>
+  
+        <input type="checkbox" id="food4" name="food4" value="Burger">
+        <label for="food4">Beauti-FULL Burger</label><br>
+        <label for="numbers">How many you want sweetheart?</label>
+        <input id="numbers" name="numbers" type="number" min="1" max="20"><br>
+      </div>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" placeholder="John" required><br>
+
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" placeholder="Doe" required><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="john@example.com" required><br>
+      
+      <label for="address">Address:</label><br>
+      <textarea id="address" name="address" row="2" column="35" placeholder="123 AppleBottom Dr." required></textarea><br>
+      <label for="zipcode">Zipcode:</label><br>
+      <input type="zipcode" id="zipcode" name="zipcode" placeholder="123456"  maxlength="6" required><br>
+      <label for="city">City:</label><br> 
+      <input type="city" id="city" name="city" required><br>
+      <label for="state">State:</label><br>
+      <select id="state" name="state" size="1"> 
+        <option value="stateGeorgia">Georgia</option>
+      </select><br>
+      <input type="submit" value="Order">
+      <input type="reset">
+    </fieldset>
+    <fieldset>
+      <div class="row">
+        <div class="col-50">
+          <h3>Billing Address</h3>
+          <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="John Doe">
+          <label for="email"><i class="fa fa-envelope"></i> Email</label>
+          <input type="text" id="email" name="email" placeholder="john@example.com">
+          <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+          <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+          <label for="city"><i class="fa fa-institution"></i> City</label>
+          <input type="text" id="city" name="city" placeholder="Atlanta">
+
+          <div class="row">
+            <div class="col-50">
+              <label for="state">State</label>
+              <input type="text" id="state" name="state" placeholder="GA">
+            </div>
+            <div class="col-50">
+              <label for="zip">Zip</label>
+              <input type="text" id="zip" name="zip" placeholder="10001">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-50">
+          <h3>Payment</h3>
+          <label for="fname">Accepted Cards</label>
+          <div class="icon-container">
+            <i class="fa fa-cc-visa" style="color:navy;"></i>
+            <i class="fa fa-cc-amex" style="color:blue;"></i>
+            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+            <i class="fa fa-cc-discover" style="color:orange;"></i>
+          </div>
+          <label for="cname">Name on Card</label>
+          <input type="text" id="cname" name="cardname" placeholder="John Doe">
+          <label for="ccnum">Credit card number</label>
+          <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+          <label for="expmonth">Exp Month</label>
+          <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+          <div class="row">
+            <div class="col-50">
+              <label for="expyear">Exp Year</label>
+              <input type="text" id="expyear" name="expyear" placeholder="2018">
+            </div>
+            <div class="col-50">
+              <label for="cvv">CVV</label>
+              <input type="text" id="cvv" name="cvv" placeholder="352">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </fieldset>
+  </form>
+<!-- Add your restaurant order form above -->
+</div>
+</main>
+
+<aside role='complementary'>
+  <div class="location" id="location">
+  <h2>Shirley's Cafe - Downtown Sueville</h2>
+  <address> 123 Sueville Rd, Atlanta, Ga  </address> 
+  <h2>Shirley's Cafe - Downtown Wellington </h2>
+  <address> 123 Wellington St, Atlanta, Ga</address>
+  </div>
+  <div class="contactus" id="contactus">
+    <p>Call Us:<a href="tel:+123-456-7891">+123-456-7891</a></p>
+  </div>
+  <p>Shirley's Cafe is available in 2 locations in Happy GA. We offer
+    delicious sweet and savory meals while supporting local farms. Bring your 
+    family down to enjoy our wonderful food.
+  </p>
+</aside>
+
+<footer role="contactinfo">
+  <div class="social" id="social">
+  <h2>SHIRLEY YOU WON'T MISS OUT!</h2>
+  <h3> Subscribe to Our Newsletter!</h3>
+  <h3> Follow Us on Social Media!</h3>
+  <p>Information about the document, it's author and such...</p>
+  </div>
+</footer>
+
+</body>
+</html>
